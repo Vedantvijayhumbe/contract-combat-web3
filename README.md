@@ -1,6 +1,7 @@
+##Explain
+
 **_safeMint
 
-**_setTokenURI
 _safeMint function was present in 2 files Researchcollab.sol and Twittercollab.sol . 
 
 _safeMint is a function provided by OpenZeppelin's ERC721 contract. It ensures that when an NFT (ERC-721 token) is minted, it is safely received by the recipient.
@@ -11,10 +12,10 @@ why using _safemint is better :
 use of _safemint in Researchcollab : 
 
 ---we had a function called createResearch : 
-
+ 
   The use of _safeMint ensures that:
 
-                 ![image](https://github.com/user-attachments/assets/0dec31b9-31fb-4e12-8938-a22fa615c0c5)
+ ![image](https://github.com/user-attachments/assets/0dec31b9-31fb-4e12-8938-a22fa615c0c5)
 
 
   1.The NFT is properly assigned to the creator (msg.sender).
@@ -27,8 +28,8 @@ use of _safemint in Researchcollab :
 
 
 use of _safeMint in TwitterX.sol : 
-
-                 ![image](https://github.com/user-attachments/assets/1b05a083-bb2c-4d16-8985-5f05a0e0e759)
+     
+ ![image](https://github.com/user-attachments/assets/1b05a083-bb2c-4d16-8985-5f05a0e0e759)
 
 The function mint is responsible for minting a new NFT profile for a user. The _safeMint function is used to ensure:
 
@@ -40,10 +41,10 @@ The function mint is responsible for minting a new NFT profile for a user. The _
 
     3.Automatic Profile Setup : The minted NFT is set as the user’s profile (setProfile(tokenCount);). 
 
+   
 
 
-
-
+    
 
 
 
@@ -75,15 +76,17 @@ In Twitterx.sol contract :
 
 
    1._setTokenURI() binds NFT metadata to a token
-
+   
    2.Stores profile picture off-chain in IPFS
-
+   
    3.Allows unique metadata per NFT
-
+   
    4.Supports decentralized storage
 
 
    https://www.reddit.com/r/ethdev/comments/13xy3qt/erc721_smart_contract_best_strategy_for_handling/
+
+   
 
 
 
